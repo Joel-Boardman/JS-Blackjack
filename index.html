@@ -1,0 +1,44 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" >
+        <link rel="stylesheet" href="style.css">
+        <title>Blackjack</title>
+    </head>
+    <body>
+        <h1>Blackjack</h1>
+
+        <div class="table">
+            <div class="player-0-panel active" >
+                <div class="player-name" ><h2 id="name-0">You</h2></div>
+                <div class="player-score-0"><h2 id="score-0">0</h2></div>
+                <div class="player-container-0" id="player-you">
+
+                </div>
+            </div>
+
+            <div class="centreDeck">
+                <div>
+                    <a href="#" class="button" onClick="window.location.reload();"> restart</a>
+                </div>
+                <div>
+                    <a href="#" id="hold-id" class="button button-hold"> hold</a>
+                </div>
+                <img class="card card-one" id="card-one-id" src="img/Gray_back.jpg" alt="card back">
+                <img class="card" src="img/Gray_back.jpg" alt="card back">
+            </div>
+
+            <div class="player-1-panel">
+                <div class="player-name"><h2 id="name-1">house</h2></div>
+                <div class="player-score-1"><h2 id="score-1">0</h2></div>
+                <div class="player-container-1">
+                    
+                </div>
+                <!-- <img class="card" id="card-two"src="img/Gray_back.jpg" alt="card back"> -->
+            </div>
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+</html>

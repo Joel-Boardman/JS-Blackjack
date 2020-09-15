@@ -1,0 +1,173 @@
+/* 
+********** GLOBAL STYLES **********
+*/
+*,
+*::after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+}
+
+body {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    background-image: linear-gradient(to bottom right,  #464444,  #5e5d5d);
+    box-sizing: border-box;
+}
+
+h1 {
+    margin-top: 2rem;
+    font-weight: 400;
+    letter-spacing: 1rem;
+}
+
+h2 {
+    font-weight: 300;
+    margin: 2rem auto;
+    letter-spacing: 1rem;
+}
+
+/* 
+********** TABLE STYLE **********
+*/
+
+.table {
+    background-image: linear-gradient(to bottom right, #007900, #029702);
+    margin: 8rem;
+    min-height: 70vh;
+    border-radius: 1rem;
+    box-shadow: 1rem 1rem 1.5rem rgba(0,0,0,0.42);
+    display: flex;
+    padding-bottom: 2rem;
+}
+
+.player-0-panel,
+.player-1-panel,
+.centreDeck{
+    position: relative;
+    height: 100%;
+    width: 33.33%;
+    text-align: center;
+}
+
+
+/** GLOBAL **/
+
+.active {
+    color: black !important;
+}
+
+/* 
+********** CARDS **********
+*/
+
+.card {
+    height: 15rem;
+    position: absolute;
+    top: 250%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1rem;
+}
+
+
+.card-one {
+    transition: all .3s ease-in-out;
+    z-index: 5;
+}
+
+.card-one:hover {
+    transform: translate(-4rem, -9rem);
+    box-shadow: 1rem 1rem 1.5rem rgba(0,0,0,0.42);
+}
+
+.card-one:active {
+    transform: translate(-5rem, -7.5rem);
+    box-shadow: none;
+}
+
+
+/********PLAYER CARDS*******/
+#player-you{
+    margin-left: 2rem;
+}
+
+.player-container-0,
+.player-container-1{
+
+    grid-template-rows: 1fr;
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.playcard {
+    height: 15rem;
+    border-radius: 1rem;
+    transition: all .2s;
+}
+
+.playcard:nth-child(1) {
+    grid-row: 1/ span 1;
+    grid-column: 1 / span 2;
+    z-index: 1;
+    
+}
+.playcard:nth-child(2) {
+    grid-row: 1/ span 1;
+    grid-column: 2 / span 3;
+    z-index: 2;
+}
+
+.playcard:hover {
+    transform: translate(0.2rem, -.5rem);
+    box-shadow: 1rem 1rem 1.5rem rgba(0,0,0,0.42);
+    z-index: 10;
+}
+
+
+/********BUTTONS********/
+
+.button:hover {
+    background-color: black;
+}
+
+.button:active {
+    background-color: white;
+    color: black;
+}
+
+.button {
+    background: none;
+    border: none;
+    padding: 0.5rem 0 0.5rem 0.5rem;
+    margin-top: 1rem;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: 0.5rem;
+    border-radius: 0.2rem;
+
+    transition: all .2s;
+}
+
+.active {
+    color: black !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
