@@ -1,5 +1,5 @@
 # JS-Blackjack
-Pure Javascript blackjack game that puts the player up against an AI.
+This is a pure Javascript blackjack game that puts the player up against an AI.
 
 Notice - if you run this game, be sure to remove any ad-blockers on your browser. I ran into a few issues with it refusing to display certain cards.
 
