@@ -24,6 +24,5 @@ For example :
 
         }, 1000);
     };
-};
 
 Functions like this are set between likely to unlikely, and the higher the score, the less likely these commands will execute. This creates the illussion of risk for the AI, and with each turn it's reaction will be different.
